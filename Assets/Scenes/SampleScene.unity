@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 551208233}
   - component: {fileID: 551208232}
   - component: {fileID: 551208231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.07510536, y: -0.0833965, z: -0.0063034734, w: 0.9936622}
+  m_LocalRotation: {x: -0.08853905, y: -0.0833036, z: -0.007430942, w: 0.99255544}
   m_LocalPosition: {x: 2.1399999, y: 3.03, z: -4.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -623,6 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54f7a3adb849154aa08b9121dedc565, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bloodDecal: {fileID: 8729043021112652020, guid: 819c6268a8e154147984aa729b6f126b, type: 3}
 --- !u!1 &1213805660
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,7 +636,7 @@ GameObject:
   - component: {fileID: 1213805663}
   - component: {fileID: 1213805662}
   - component: {fileID: 1213805661}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -787,24 +788,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1832798172 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6415981461725731558, guid: f36049fb5548c08459b7004e5ad7ef84, type: 3}
-  m_PrefabInstance: {fileID: 6415981461306043749}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1832798178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832798172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4329433c4b200824083de262f090c010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: 100
 --- !u!1 &1851754150
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +914,7 @@ GameObject:
   - component: {fileID: 2066388021}
   - component: {fileID: 2066388020}
   - component: {fileID: 2066388019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,6 +1010,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 539691469652436226, guid: 4d14697872ffd5a4185256da37407696, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 539691469652436236, guid: 4d14697872ffd5a4185256da37407696, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1071,10 +1058,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8579620314077180087, guid: 4d14697872ffd5a4185256da37407696, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d14697872ffd5a4185256da37407696, type: 3}
 --- !u!1001 &6415981461306043749
@@ -1086,7 +1069,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6415981461725731558, guid: f36049fb5548c08459b7004e5ad7ef84, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: 3DPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 6415981461725731564, guid: f36049fb5548c08459b7004e5ad7ef84, type: 3}
       propertyPath: m_RootOrder
@@ -1131,10 +1114,6 @@ PrefabInstance:
     - target: {fileID: 6415981461725731564, guid: f36049fb5548c08459b7004e5ad7ef84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415981461922547132, guid: f36049fb5548c08459b7004e5ad7ef84, type: 3}
-      propertyPath: m_Tilt
-      value: -29.35002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f36049fb5548c08459b7004e5ad7ef84, type: 3}

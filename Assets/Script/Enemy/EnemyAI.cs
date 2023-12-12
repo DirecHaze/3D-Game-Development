@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
     private float _attackDelay = 1.5f, _attackAgain;
     private void Start()
     {
-        _enemyController = GetComponent<CharacterController>();
+        _enemyController = GetComponentInParent<CharacterController>();
   
     }
     private void Update()
@@ -55,7 +55,7 @@ public class EnemyAI : MonoBehaviour
             _yVelocity -= _gravity * Time.deltaTime;
         }
         _direction.y = 0;
-        transform.localRotation = Quaternion.LookRotation(_direction);
+        gameObject.transform.parent.localRotation = Quaternion.LookRotation(_direction);
         _velocity.y = _yVelocity;
         _enemyController.Move(_velocity * Time.deltaTime);
     }
